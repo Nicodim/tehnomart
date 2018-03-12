@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <image id="cart-icon" class="cls-1" width="15" height="15" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAMAAAAMCGV4AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAARVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////8AAABSI1XQAAAAFnRSTlMATT1LAgVFNCQSA0xGKg4tMhYBGwosZ8TOhQAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABMSURBVAjXXc3bDoAwCANQWJ13nZvu/3/VqTGB9qU5QIKoahCTZnTGMfZq0iYDeSRP5HnxlvBj3fbH6QWOXL6XJ91fZE5FdQ2Fa7u/AbWWAgI+kLMiAAAAAElFTkSuQmCC"/>
+</svg>
