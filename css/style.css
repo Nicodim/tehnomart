@@ -11,6 +11,24 @@ body {
 a {
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 .button {
   font: inherit;
   text-align: center;
@@ -52,15 +70,24 @@ a {
 }
 .main-logo {
   display: block;
-  width: 220px;
+  width: 240px;
   height: 42px;
 }
 .main-header-logo {
   background-color: #ee3643;
-  border-bottom: 2px solid #b52933;
+  border-bottom: 3px solid #b52933;
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 11px 0;
+}
+.main-header-logo:hover,
+.main-header-logo:focus {
+    background-color: #ba2732;
+    border-bottom: 3px solid #9a212a;
 }
 
 .site-navigation,
@@ -89,8 +116,8 @@ a {
   width: 150px;
 }
 .user-navigation li:first-child {
-  margin-right: auto;
-  width: 90px;
+  flex-grow: 1;
+  width: 240px;
 }
 .user-navigation-inner li:first-child {
   margin-right: auto;
@@ -114,7 +141,7 @@ a {
 }
 .site-navigation {
   background-color: #32425c;
-  border-bottom: 2px solid #293449;
+  border-bottom: 4px solid #293449;
   margin: 0;
   padding: 0;
   display: flex;
@@ -122,25 +149,50 @@ a {
 }
 .site-navigation-inner {
   background-color: #32425c;
-  border-bottom: 2px solid #293449;
+  border-bottom: 4px solid #293449;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: space-between;
   list-style: none;
 }
-.site-navigation a,
-.user-navigation a,
-.site-navigation-inner a{
+.site-navigation:hover,
+.site-navigation:focus,
+.site-navigation-inner:hover,
+.site-navigation-inner:focus {
+    border-bottom: 4px solid #293449;
+}
+.site-navigation:active,
+.site-navigation-inner:active {
+    border-bottom: 4px solid #1d2739;
+}
+.user-navigation a{
   color: #ffffff;
+}
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #161d29;
+}
+.site-navigation a {
+    color: #ffffff;
+    display: block;
+    padding: 22px 30px
+}
+.site-navigation-inner a {
+    color: #ffffff;
+    display: block;
+    padding: 22px 30px
 }
 .site-navigation a:hover,
 .site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus,
 .site-navigation-inner a:hover,
-.site-navigation-inner a:focus {
-  background-color: #161d29;
+.site-navigation-inner a:focus  {
+    background-color: #293449;
+}
+.site-navigation a:active,
+.site-navigation-inner a:active {
+    background-color: #1d2739;
+    color: rgba(255,255,255,0.5);
 }
 .page-navigation {
   font-size: 13px;
@@ -171,6 +223,7 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-between;
+    margin-bottom: 40px;
 }
 .common-info-inner {
   list-style: none;
@@ -178,12 +231,20 @@ a {
   padding: 0;
   display: flex;
   justify-content: space-between;
+     margin-bottom: 40px;
 }
 .common-info li {
   width: 300px;
 }
 .common-info-inner li {
   width: 300px;
+}
+
+.common-info p {
+    margin: 0;
+}
+.common-info-inner p {
+    margin: 0;
 }
 .common-info .button {
   font-size: 21px;
@@ -232,21 +293,78 @@ a {
 .user-navigation a {
   font-size: 17px;
   line-height: 17px;
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+}   
+.user-navigation .search {
+    display: block;
+    padding-right: 150px;
+}
+.user-navigation .search:active {
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+}
+.search::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    right: 960px;
+    background-color: red;
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+}
+.search:hover::before,
+.search:focus::before {
+    opacity: 1;
+}
+.search:active::before {
+    background-color: red;
 }
 .about-company {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
 }
+.about-company p {
+    padding-right: 50px;
+}
+.contacts p {
+    margin-right: 30px;
+    margin-bottom: 8px;
+}
+.contacts p:last-child {
+    margin: 0;
+    margin-left: 10px;
+}
 .number {
   font-size: 21px;
   line-height: 18px;
   color: #ee3643;
+  border: 3px solid white;
+  padding: 9px 0;
+  text-align: center;
+  margin-bottom: 20px;
 }
 .adress {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+.login {
+    display: flex;
+    justify-content: space-between;
+}
+.login a {
+    display: block;
+    padding: 12px 25px;
+}
+.enter a{
+    padding-left: 45px;
 }
 .big-header {
   color: #32425c;
@@ -262,6 +380,7 @@ a {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .catalog-item {
@@ -270,6 +389,19 @@ a {
 }
 .catalog-item-1 {
   background-color: #ffbf47;
+    position: relative;
+}
+.catalog-item-1::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 65px;
+    right: 33px;
+    top: 50px;
+    
+    background-image: url(../img/icon-1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 .catalog-item-2 {
   background-color: #3bbce3;
@@ -284,6 +416,15 @@ a {
   width: 620px;
   height: 265px;
 }
+.catalog-item-4 .item-description {
+    margin: 0;
+    margin-left: 25px;
+    
+}
+.item-description p {
+    margin: 0;
+    margin-top: 5px;
+}
 .catalog-item-5 {
   background-color: #8ed78f;
 }
@@ -296,6 +437,9 @@ a {
 .catalog-item h3 {
   font-size: 24px;
   line-height: 30px;
+    margin: 0;
+    padding-left: 24px;
+    padding-top: 24px;
 }
 .catalog-item-price .button {
   font-size: 14px;
@@ -303,9 +447,17 @@ a {
   text-transform: uppercase;
   color:#ffffff;
   background-color: rgba(0,0,0,0.1);
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 0;
+  margin-left: 25px;
+    width: 135px;
 }
 .catalog-item-price-big .button {
   background-color: #ee3643;
+    width: 195px;
+    margin-top: 100px;
 }
 
 .catalog-item-price .button:hover,
@@ -427,10 +579,20 @@ a {
   line-height: 26px;
   text-transform: uppercase;
   width: 300px;
+ 
 }
+.popular .text {
+     padding: 33px 0;
+    padding-left: 30px;
+    
+}
+
 .popular .button {
   font-size: 14px;
   line-height: 18px;
+    display: inline-block;
+    padding: 14px 55px;
+    margin-top: 25px;
 }
 .popular .button:focus,
 .popular .button:hover {
