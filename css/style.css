@@ -704,6 +704,9 @@ input[type="radio"].visually-hidden {
     margin-top:10px;
     margin-bottom:15px
 }
+.goods-item .current-price-last {
+    margin-top: 48px;
+}
 .catalog-item-inner {
   background-color: #ffffff;
   border: 1px solid rgba(0,0,0,0.1);
