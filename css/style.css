@@ -852,7 +852,18 @@ input[type="radio"].visually-hidden {
 .service-list {
   margin: 0;
   padding: 0;
-    position: relative;
+  position: relative;
+}
+.service-list::before{
+     content:"";
+    position:absolute;
+    width: 10px;
+    height: 272px;
+    top: -42px;
+    left: 210px;
+     background-image: url(../img/Layer%20118.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 .service-description {
   width: 460px;
@@ -915,7 +926,8 @@ input[type="radio"].visually-hidden {
 .sevice-info {
   width: 300px;
   position: absolute;
-  right: 540px;
+  right: 265px;
+  top: 5px;
 }
 .about {
   font-size: 13px;
