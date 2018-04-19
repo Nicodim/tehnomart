@@ -578,7 +578,7 @@ input[type="radio"].visually-hidden {
   font-size: 26px;
   line-height: 26px;
   text-transform: uppercase;
-  width: 300px;
+  width: 320px;
  
 }
 .popular .text {
@@ -623,7 +623,6 @@ input[type="radio"].visually-hidden {
     display:inline-block;
     width:218px;
     margin-right:20px;
-    margin-bottom:20px;
     border:1px solid #ccc;
     line-height:20px;
     font-weight:bold;
@@ -835,6 +834,12 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   border: 1px solid rgba(0,0,0,0.1);
   width: 220px;
+  height: 145px;
+  margin-bottom: 20px;
+}
+.manufactures-item a {
+    display: inline-block;
+    align-items: center;
 }
 .service {
   font-size: 13px;
