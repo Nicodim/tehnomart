@@ -852,14 +852,21 @@ input[type="radio"].visually-hidden {
 .service-list {
   margin: 0;
   padding: 0;
+    position: relative;
 }
 .service-description {
   width: 460px;
   margin-right: auto;
 }
+.service-description p {
+    width: 400px;
+    margin: 0;
+    margin-bottom: 70px;
+}
 .service h2 {
   font-size: 30px;
   line-height: 24px;
+    padding-top: 70px;
 }
 .service-item {
   list-style: none;
@@ -876,6 +883,15 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #32425c;
   text-transform: none;
+  display: inline-block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 126px;
+    
+}
+.service-item-3 a {
+    padding-right: 142px;
 }
 .service-item a:hover,
 .service-item a:focus {
