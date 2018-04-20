@@ -950,6 +950,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   text-transform: uppercase;
     margin: 0;
+    margin-bottom: 35px;
 }
 .index-columns {
   padding-bottom: 85px;
@@ -994,8 +995,20 @@ input[type="radio"].visually-hidden {
 .about-contacts {
   width: 300px;
 }
+.about-contacts .button {
+    display: inline-block;
+    padding: 13px 40px;
+    text-align: center;
+    vertical-align: middle; 
+}
+.about-contacts p {
+    margin: 0;
+    width: 195px;
+    margin-bottom: 35px;
+}
 .info-map {
     margin: 0;
+    margin-bottom: 40px;
 }
 .about a {
   font-size: 14px;
