@@ -980,7 +980,7 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 20px;
   margin-left: 36px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
     position: relative;
 }
 .partners-item::before {
@@ -997,7 +997,8 @@ input[type="radio"].visually-hidden {
 }
 .about-contacts .button {
     display: inline-block;
-    padding: 13px 40px;
+    width: 100%;
+    padding: 13px 0;
     text-align: center;
     vertical-align: middle; 
 }
@@ -1034,11 +1035,21 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
 }
 .main-footer-logo {
-  background-color: #ee3643;
-  border-bottom: 3px solid #b52933;
-  font-size: 30px;
-  line-height: 30px;
-  color: #ffffff;
+    background-color: #ee3643;
+    border-bottom: 3px solid #b52933;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 21px 42px;
+    margin-bottom: 36px;
+}
+.main-footer-logo:hover,
+.main-footer-logo:focus {
+    background-color: #ba2732;
+    border-bottom: 3px solid #9a212a;
 }
 .laer-1 .container {
   padding-bottom: 55px;
@@ -1049,11 +1060,11 @@ input[type="radio"].visually-hidden {
   width: 380px;
 }
 .footer-contacts {
-  width: 550px;
 }
 .footer-list-1 {
   list-style: none;
-  margin: 0;
+  margin: 40px 0;
+  margin-left: 28px;
   padding: 0;
   width: 550px;
   display: flex;
@@ -1099,9 +1110,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 }
-.footer-contacts{
-  margin-bottom: 0;
-  width: 240px;
+.footer-contacts {
+  margin:0; 
+}
+.footer-contacts p {
+    margin: 0;
 }
 .footer-social {
   text-align: center;
@@ -1109,10 +1122,31 @@ input[type="radio"].visually-hidden {
   width: 150px
 }
 .footer-social ul {
+    margin: 0 auto;
+  padding: 0;
   list-style: none;
+    display: flex;
+    width: 131px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   color: #ffffff;
+    width: 41px;
+    height: 41px;
+    background-color: #212a3a;
+    border-radius: 50%;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: #ee3643;
+}
+.social-button:hover path,
+.social-button:focus path {
+  fill: #000000;
 }
 .footer-feedback {
   font-size: 16px;
