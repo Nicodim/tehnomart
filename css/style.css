@@ -840,6 +840,7 @@ input[type="radio"].visually-hidden {
 .manufactures-item a {
     display: inline-block;
     align-items: center;
+    padding-top: 45px;
 }
 .service {
   font-size: 13px;
