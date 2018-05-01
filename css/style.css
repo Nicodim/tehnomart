@@ -239,7 +239,6 @@ input[type="radio"].visually-hidden {
 .common-info-inner li {
   width: 300px;
 }
-
 .common-info p {
     margin: 0;
 }
@@ -262,16 +261,11 @@ input[type="radio"].visually-hidden {
 }
 
 .common-info-inner .button {
-  font-size: 16px;
+  font-size: 21px;
   line-height: 18px;
   color: #32425c;
   background-color: #ffffff;
   text-transform: none;
-}
-.common-info-inner .button:focus,
-.common-info-inner .button:hover {
-  color: #ee3643;
-  text-decoration: underline;
 }
 .common-info-inner .button:active {
   color: rgba(0,0,0,0.3);
@@ -289,6 +283,24 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   width: 220px;
+}
+.enter {
+    margin-bottom: 7px;
+}
+.links {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    color: #32425c;
+    font-size: 16px;
+    line-height: 18px;
+}
+.links a:first-child {
+    padding-left: 18px;
 }
 .user-navigation a {
   font-size: 17px;
@@ -363,8 +375,10 @@ input[type="radio"].visually-hidden {
     display: block;
     padding: 12px 25px;
 }
-.enter a{
-    padding-left: 45px;
+.enter .button {
+    display: inline-block;
+    padding: 13px 42px;
+    padding-right: 70px;
 }
 .big-header {
   color: #32425c;
