@@ -488,6 +488,13 @@ input[type="radio"].visually-hidden {
 .catalog-item-price-big .button:active {
   background-color: #ba2732;
 }
+.catalog-colunms {
+    width: 940px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
 .filters {
   font-size: 15px;
   line-height: 20px;
@@ -630,7 +637,10 @@ input[type="radio"].visually-hidden {
   display:flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 700px;
+  width: 720px;
+}
+.catalog-item-inner:nth-child(3n){
+    margin-right:0;
 }
 .goods-item {
     position:relative;
@@ -640,7 +650,13 @@ input[type="radio"].visually-hidden {
     border:1px solid #ccc;
     line-height:20px;
     font-weight:bold;
-    text-align:center;
+    text-align:center;   
+}
+.goods-items {
+    font-size:0;
+}
+.goods-item {
+    font-size:16px;
 }
 .goods-item .flag {
     position:absolute;
@@ -719,6 +735,9 @@ input[type="radio"].visually-hidden {
 }
 .goods-item .current-price-last {
     margin-top: 48px;
+}
+.right-column {
+    width: 700px;
 }
 .catalog-item-inner {
   background-color: #ffffff;
