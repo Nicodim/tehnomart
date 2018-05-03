@@ -503,16 +503,91 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   width: 220px;
 }
-.filters h3 {
+.filter-item {
+    margin: 0;
+    padding: 0;
+}
+.range-filter {
+  width: 220px;
+  margin-top: 49px;
+}
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+  padding-left: 20px;
+    margin-bottom: 15px;
   background-color: #f7f3ec;
-  font-size: 13px;
-  line-height: 18px;
-  margin: 0;
+  border-radius: 5px;
+}
+.range-controls .scale {
+  height: 2px;
+
+  background: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+
+  background: #00ca74;
+}
+.range-controls .toggle {
+    position: absolute;
+  top: 31px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 140px;
+}
+.price-controls {
+  font-size: 0;
+    position: relative;
+}
+.price-controls::before {
+   content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px; 
+    right: 105px;
+    top:18px;
+    background: #000000;
+}
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.price-controls input {
+    width: 72px;
+  padding: 8px 10px;
+  font-size: 17px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+.max-price input {
+    margin-left: 18px;
 }
 .filter fieldset {
   border: none;
 }
-.filter legend {
+.filter-item legend {
   font-size: 17px;
   line-height: 30px;
 }
@@ -535,6 +610,17 @@ input[type="radio"].visually-hidden {
 .left-column {
   margin: 0;
   width: 700px;
+}
+.left-column-header {
+    background-color: #f7f3ec;
+     font-size: 13px;
+    line-height: 18px;
+    width: 220px;
+    
+}
+.left-column-header h3 {
+    display: inline-block;
+    padding-left: 24px;
 }
 .sort-categories {
   background-color: #f7f3ec;
@@ -647,6 +733,7 @@ input[type="radio"].visually-hidden {
     display:inline-block;
     width:218px;
     margin-right:20px;
+    margin-bottom: 20px;
     border:1px solid #ccc;
     line-height:20px;
     font-weight:bold;
@@ -738,6 +825,9 @@ input[type="radio"].visually-hidden {
 }
 .right-column {
     width: 700px;
+}
+.left-column {
+    width: 220px;
 }
 .catalog-item-inner {
   background-color: #ffffff;
