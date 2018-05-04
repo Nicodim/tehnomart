@@ -504,12 +504,11 @@ input[type="radio"].visually-hidden {
   width: 220px;
 }
 .filter-item {
-    margin: 0;
     padding: 0;
+    margin: 25px 0;
 }
 .range-filter {
   width: 220px;
-  margin-top: 49px;
 }
 .range-controls {
     position: relative;
@@ -585,11 +584,19 @@ input[type="radio"].visually-hidden {
     margin-left: 18px;
 }
 .filter fieldset {
-  border: none;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 25px;
+}
+.filter .filter-item-last {
+     border-bottom: none;
 }
 .filter-item legend {
   font-size: 17px;
   line-height: 30px;
+}
+.price-filter {
+    margin-bottom: 20px;
 }
 .filter ul {
   list-style: none;
@@ -673,21 +680,22 @@ input[type="radio"].visually-hidden {
   opacity: 0.1;
 }
 .filter-button {
-  padding: 16px 88px;
-  margin-top: 6px;
+  padding: 9px 40px;
   text-decoration: none;
   color: #000000;
-  background-color: #eeeeee;
+  background-color: #ffffff;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-top: 45px;
 }
 .filter-button:hover,
 .filter-button:focus {
   color: #000000;
-  background-color: #dfdfdf;
+  background-color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.3);
 }
 .filter-button:active {
-  color: rgba(0,0,0,0.3);
-  background-color: #d5d5d5;
-  border-top: 1px solid #bfbfbf;
+  background-color: #ffffff;
+  border-color:  #ee3643;
 }
 .left-column {
   margin: 0;
@@ -698,6 +706,7 @@ input[type="radio"].visually-hidden {
      font-size: 13px;
     line-height: 18px;
     width: 220px;
+    margin-bottom: 20px;
     
 }
 .left-column-header h3 {
@@ -708,8 +717,10 @@ input[type="radio"].visually-hidden {
   background-color: #f7f3ec;
   font-size: 13px;
   line-height: 18px;
+  font-style: Myriad, serif;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   width: 700px;
   display: flex;
@@ -727,6 +738,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 15px;
   width: 380px;
   display: flex;
   justify-content: space-between;
@@ -747,10 +759,45 @@ input[type="radio"].visually-hidden {
 .sort-direction {
   list-style: none;
   margin: 0;
+    margin-top: 18px;
   padding: 0;
-  width: 70px;
+  width: 60px;
   display: flex;
   justify-content: space-between;
+}
+.sort-direction li:last-child{
+    margin-right: 17px;
+}
+.sort-direction a {
+    position: relative;
+}
+.catalog-button-up::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  background-image: url('../img/icon-down-dir.png');
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.catalog-button-down::before {
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  background-image: url('../img/icon-up-dir.png');
+  background-repeat: no-repeat;
+  opacity: 0.3;
+}
+.catalog-button-up:hover::before,
+.catalog-button-up:focus::before,
+.catalog-button-down:hover::before,
+.catalog-button-down:focus::before {
+  opacity: 1;
+}
+.catalog-button-down-current::before {
+        fill:#ee3643;
+    opacity: 1;
 }
 .popular {
   background-color: #f9f5f0;
