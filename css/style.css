@@ -212,6 +212,7 @@ input[type="radio"].visually-hidden {
 }
 .catalog-header {
     background-color: #f2f6f8;
+    margin-bottom: 20px;
 }
 .catalog-header b {
     display: block;
