@@ -52,13 +52,13 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 .main-header {
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 .main-navigation {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
-
+  padding-bottom: 60px;
   background-color: #f4f7f9;
 }
 .main-navigation-inner {
@@ -209,6 +209,18 @@ input[type="radio"].visually-hidden {
 }
 .page-list a {
   color: #000000;
+}
+.catalog-header {
+    background-color: #f2f6f8;
+}
+.catalog-header b {
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 30px;
+    color: #32425c;
 }
 .order a:hover,
 .order a:focus {
@@ -1030,21 +1042,27 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
-.pagination-item a {
+.pagination-item .pagination-button {
+    display: inline-block;
+    padding: 13px 17px;
   color: #000000;
   background-color: #ffffff;
   border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
 }
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item-word .pagination-button {
+    padding: 13px 21px;
+}
+.pagination-item .pagination-button:hover,
+.pagination-item .pagination-button:focus {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid rgba(0,0,0,0.3);
 }
-.pagination-item a:active {
+.pagination-item .pagination-button:active {
   border: 1px solid #ee3643;
 }
-.pagination-item-current a{
+.pagination-item-current .pagination-button {
   color: #ffffff;
   background-color: #ee3643;
 }
