@@ -198,6 +198,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 18px;
 }
 .page-list {
   list-style: none;
