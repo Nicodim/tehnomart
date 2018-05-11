@@ -79,10 +79,10 @@ input[type="radio"].visually-hidden {
   font-size: 24px;
   line-height: 24px;
   color: #ffffff;
-    display: block;
+    display: inline-block;
     text-align: center;
     text-transform: uppercase;
-    padding: 11px 0;
+    padding: 10px 56px;
 }
 .main-header-logo:hover,
 .main-header-logo:focus {
@@ -319,13 +319,19 @@ input[type="radio"].visually-hidden {
 .user-navigation a {
   font-size: 17px;
   line-height: 17px;
-    display: block;
-    padding: 15px 0;
-    text-align: center;
-}   
+  display: inline-block;
+  padding: 12px 20px;
+  text-align: center;
+  margin-left: 27px;
+} 
+.order a {
+    margin-left: 0;
+}
+.search a {
+    margin-left: 0;
+}
 .user-navigation .search {
     display: block;
-    padding-right: 150px;
 }
 .user-navigation .search:active {
     background-color: #ffffff;
