@@ -52,7 +52,7 @@ input[type="radio"].visually-hidden {
   padding: 0 10px;
 }
 .main-header {
-  margin-bottom: 20px;
+  margin-bottom: 57px;
 }
 .main-navigation {
   font-size: 17px;
@@ -146,6 +146,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  padding: 0px 20px;
 }
 .site-navigation-inner {
   background-color: #32425c;
@@ -176,7 +177,7 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
     color: #ffffff;
     display: block;
-    padding: 22px 30px
+    padding: 20px 30px
 }
 .site-navigation-inner a {
     color: #ffffff;
@@ -237,7 +238,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 .common-info-inner {
   list-style: none;
@@ -245,7 +246,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   justify-content: space-between;
-     margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 .common-info li {
   width: 300px;
@@ -364,10 +365,12 @@ input[type="radio"].visually-hidden {
 }
 .about-company p {
     padding-right: 50px;
+    padding-left: 55px;
+    padding-top: 4px;
 }
 .contacts p {
-    margin-right: 30px;
-    margin-bottom: 8px;
+    margin-right: 32px;
+    margin-bottom: 6px;
 }
 .contacts p:last-child {
     margin: 0;
@@ -378,7 +381,10 @@ input[type="radio"].visually-hidden {
   line-height: 18px;
   color: #ee3643;
   border: 3px solid white;
-  padding: 9px 0;
+    padding-top: 11px;
+    padding-right: 0px;
+    padding-bottom: 9px;
+    padding-left: 20px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -397,8 +403,8 @@ input[type="radio"].visually-hidden {
 }
 .enter .button {
     display: inline-block;
-    padding: 13px 42px;
-    padding-right: 70px;
+    margin-left: 16px;
+    padding-left: 49px;
 }
 .big-header {
   color: #32425c;
