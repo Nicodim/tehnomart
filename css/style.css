@@ -1165,8 +1165,8 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   color: #000000;
   background-color: #f4f8f9;
-  height: 590px;
-  margin-bottom: 80px;
+  height: 520px;
+  margin-bottom: 15px;
 }
 .service-columns {
     display: flex;
@@ -1209,9 +1209,10 @@ input[type="radio"].visually-hidden {
     width: 400px;
     margin: 0;
     margin-bottom: 70px;
+    margin-top: 28px;
 }
 .service h2 {
-  font-size: 30px;
+  font-size: 29px;
   line-height: 24px;
   padding-top: 70px;
   text-transform: uppercase;
