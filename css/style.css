@@ -843,7 +843,7 @@ input[type="radio"].visually-hidden {
 }
 .popular {
   background-color: #f9f5f0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .popular-list {
   margin: 0;
@@ -861,7 +861,7 @@ input[type="radio"].visually-hidden {
 }
 .popular .text {
      padding: 33px 0;
-    padding-left: 30px;
+    padding-left: 25px;
     width: 400px;
 }
 .popular .popular-button {
@@ -878,6 +878,10 @@ input[type="radio"].visually-hidden {
     border-radius: 5px;
     margin-left: 42px;
 }
+.popular-button-2 .button {
+    padding: 11px 70px;
+    margin-right: 24px;
+}
 .popular .button:focus,
 .popular .button:hover {
   background-color: #ca2c37;
@@ -888,6 +892,7 @@ input[type="radio"].visually-hidden {
 .goods-list {
   list-style: none;
   margin:20px auto;
+  margin-bottom: 13px;
   padding: 0;
   display:flex;
   justify-content: space-between;
@@ -910,7 +915,7 @@ input[type="radio"].visually-hidden {
     display:inline-block;
     width:218px;
     margin-right:20px;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
     border:1px solid #ccc;
     line-height:20px;
     font-weight:bold;
@@ -1002,7 +1007,7 @@ input[type="radio"].visually-hidden {
     min-height:40px;
     padding:0 25px;
     margin-top:10px;
-    margin-bottom:15px
+    margin-bottom:7px
 }
 .goods-item .current-price-last {
     margin-top: 48px;
@@ -1050,7 +1055,7 @@ input[type="radio"].visually-hidden {
 .goods-item .button::after {
     content:"";
     position:absolute;
-    top:-1;
+    top:-1px;
     right:-20px;
     width:0;
     height:0;
@@ -1129,7 +1134,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 .manufacturers {
-  margin-bottom: 85px;
+  margin-bottom: 60px;
 }
 .manufacturers-list {
   list-style: none;
@@ -1208,7 +1213,8 @@ input[type="radio"].visually-hidden {
 .service h2 {
   font-size: 30px;
   line-height: 24px;
-    padding-top: 70px;
+  padding-top: 70px;
+  text-transform: uppercase;
 }
 .service-item {
   list-style: none;
