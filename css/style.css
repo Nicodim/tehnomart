@@ -1397,6 +1397,7 @@ input[type="radio"].visually-hidden {
     background-color: #ba2732;
     border-bottom: 3px solid #9a212a;
 }
+
 .laer-1 .container {
   padding-bottom: 55px;
   display: flex;
@@ -1451,7 +1452,7 @@ input[type="radio"].visually-hidden {
   background-color: #293449;
   font-size: 16px;
   line-height: 18px;
-  padding: 35px 0;
+  padding: 31px 0;
 }
 .laer-2 .container {
   display: flex;
@@ -1469,7 +1470,7 @@ input[type="radio"].visually-hidden {
   width: 150px
 }
 .footer-social ul {
-    margin: 0 auto;
+    margin: 0 32px;
   padding: 0;
   list-style: none;
     display: flex;
