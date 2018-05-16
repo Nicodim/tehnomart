@@ -70,7 +70,7 @@ input[type="radio"].visually-hidden {
 }
 .main-logo {
   display: block;
-  width: 240px;
+  width: 220px;
   height: 42px;
 }
 .main-header-logo {
@@ -92,6 +92,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation,
 .user-navigation,
+.user-navigation-inner,
 .common-info {
   list-style: none;
 }
@@ -108,6 +109,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-grow: 1;
 }
 .user-navigation li {
   width: 150px;
@@ -121,7 +123,13 @@ input[type="radio"].visually-hidden {
 }
 .user-navigation-inner li:first-child {
   margin-right: auto;
-  width: 90px;
+  width: 270px;
+  flex-grow: 2;
+}
+.user-navigation-inner li:nth-child(3) {
+  margin-right: auto;
+  width: 150px;
+  flex-grow: 1;
 }
 .main-navigation-wrapper {
   width: 100%;
@@ -169,6 +177,10 @@ input[type="radio"].visually-hidden {
 }
 .user-navigation a{
   color: #ffffff;
+}
+.user-navigation-inner a{
+  color: #ffffff;
+  
 }
 .user-navigation a:hover,
 .user-navigation a:focus {
@@ -228,6 +240,9 @@ input[type="radio"].visually-hidden {
 .order a:hover,
 .order a:focus {
   background-color: #5fbb2d;
+}
+.basket a {
+    padding-right: 20px;
 }
 .basket a:hover,
 .basket a:focus {
@@ -325,19 +340,45 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin-left: 27px;
 } 
+.user-navigation-inner a {
+  font-size: 17px;
+  line-height: 17px;
+  display: inline-block;
+  padding: 13px 22px;
+  padding-left: 49px;
+} 
 .order a {
     margin-left: 0;
+}
+.basket a {
+    padding-right: 26px;
+}
+.user-navigation-inner .order a {
+    padding-left: 20px;
+}
+.user-navigation-inner .search a {
+    padding-right: 170px;
+    padding-left: 50px;
+    padding-top: 12px;
 }
 .search a {
     margin-left: 0;
 }
 .user-navigation .search {
     display: block;
+    position: relative;
 }
-.user-navigation .search:active {
+.user-navigation-inner .search {
+    display: block;
+    position: relative;
+}
+.user-navigation .search a:active {
     background-color: #ffffff;
     color: #000000;
-    position: relative;
+}
+.user-navigation-inner .search a:active {
+    background-color: #ffffff;
+    color: #000000;
 }
 .search::before {
     content: "";
@@ -356,7 +397,7 @@ input[type="radio"].visually-hidden {
     opacity: 1;
 }
 .search:active::before {
-    background-color: red;
+fill: red;
 }
 .about-company {
   font-size: 16px;
