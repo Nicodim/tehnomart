@@ -332,6 +332,9 @@ input[type="radio"].visually-hidden {
 .links a:first-child {
     padding-left: 18px;
 }
+.links a:last-child {
+    padding-right: 69px;
+}
 .user-navigation a {
   font-size: 17px;
   line-height: 17px;
@@ -443,9 +446,10 @@ fill: red;
     padding: 12px 25px;
 }
 .enter .button {
-    display: inline-block;
-    margin-left: 16px;
-    padding-left: 49px;
+   display: inline-block;
+   padding: 13px 35px;
+   padding-left: 50px;
+   padding-right: 64px;   
 }
 .big-header {
   color: #32425c;
