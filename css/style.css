@@ -647,7 +647,7 @@ fill: red;
   background: #d7dcde;
 }
 .range-controls .bar {
-  width: 70%;
+  width: 85%;
   height: 2px;
 
   background: #00ca74;
@@ -850,6 +850,10 @@ fill: red;
   display: flex;
   justify-content: space-between;
 }
+.sort-categories h3 {
+    margin: 10px 0;
+    margin-left: 21px;
+}
 .categories-name {
   margin: 0;
   padding: 0;
@@ -861,11 +865,15 @@ fill: red;
 .sort-categories-list {
   list-style: none;
   margin: 0;
+    margin-left: 120px;
   padding: 0;
-  padding-top: 15px;
+  padding-top: 11px;
   width: 380px;
   display: flex;
   justify-content: space-between;
+}
+.sort-categories-item:last-child {
+margin-right: 42px;
 }
 .sort-categories-item a {
   color: rgba(0,0,0,0.3);
@@ -997,7 +1005,7 @@ fill: red;
     display:inline-block;
     width:218px;
     margin-right:20px;
-    margin-bottom: 8px;
+    margin-bottom: 25px;
     border:1px solid #ccc;
     line-height:20px;
     font-weight:bold;
