@@ -996,6 +996,7 @@ margin-right: 42px;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 720px;
+  margin-bottom: 29px;
 }
 .catalog-item-inner:nth-child(3n){
     margin-right:0;
@@ -1005,7 +1006,7 @@ margin-right: 42px;
     display:inline-block;
     width:218px;
     margin-right:20px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
     border:1px solid #ccc;
     line-height:20px;
     font-weight:bold;
@@ -1136,6 +1137,7 @@ margin-right: 42px;
     position:relative;
     width:80px;
     margin:10px auto;
+    margin-left: 13px;
     margin-bottom:20px;
     padding:10px 44px;
     color:white;
@@ -1178,18 +1180,20 @@ margin-right: 42px;
   margin: 0;
   padding: 0;
   width: 300px;
+    margin-bottom: 60px;
 }
 
 .pagination-item .pagination-button {
     display: inline-block;
-    padding: 13px 17px;
+    padding: 10px 17px;
   color: #000000;
   background-color: #ffffff;
   border: 1px solid rgba(0,0,0,0.1);
     border-radius: 5px;
 }
 .pagination-item-word .pagination-button {
-    padding: 13px 21px;
+    padding: 10px 30px;
+    margin-right: 13px;
 }
 .pagination-item .pagination-button:hover,
 .pagination-item .pagination-button:focus {
